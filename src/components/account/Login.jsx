@@ -12,6 +12,7 @@ import {
   ListItem,
 } from "@material-ui/core";
 import { AccountContext } from "../../context/AccountProvider";
+import { clientId } from "../../constants/data";
 
 const useStyle = makeStyles({
   component: { display: "flex" },
@@ -57,8 +58,6 @@ const style = {
 const Login = ({ classes }) => {
   const classname = useStyle();
   const qrurl = "https://www.ginifab.com/feeds/qr_code/img/qrcode.jpg";
-  const clientId =
-    "97791754536-a62pmma9arsko3lmvpdmt54cbpd0peg4.apps.googleusercontent.com";
   const { account, setAccount } = useContext(AccountContext);
 
   const onLoginSuccess = (res) => {

@@ -48,7 +48,7 @@ const ChatBox = ({classes}) => {
                    <Menu/>
                </Box>
                <Box className={classname.rightComponent}>
-                   i
+                
                </Box>
            </Box>
         </Dialog>
